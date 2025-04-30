@@ -24,6 +24,124 @@
 
         </div>
     </header>
+    <div class="container py-4">
+      <div class="card border rounded shadow-sm">
+        <div class="card-header bg-white text-center py-3">
+          <h4 class="mb-0">Simulação de Apostas Esportivas</h4>
+        </div>
+        <div class="card-body">
+          <div class="mb-4">
+            <p class="mb-3">Qual casa de apostas você usa?</p>
+            <div class="row g-2">
+              <div class="col">
+                <button class="btn d-block w-100 rounded p-3" style="background-color: var(--bs-primary); color: white;">
+                  bet365
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn d-block w-100 rounded p-3" style="background-color: #333; color: white;">
+                  Betano
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn d-block w-100 rounded p-3" style="background-color: var(--bs-primary); color: white;">
+                  Superbet
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn d-block w-100 rounded p-3" style="background-color: #333; color: white;">
+                  Sportingbet
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn d-block w-100 rounded p-3" style="background-color: var(--bs-primary); color: white;">
+                  KTO
+                </button>
+              </div>
+            </div>
+          </div>
+    
+          <div class="row mb-3 align-items-center">
+            <div class="col">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <label class="mb-0">Odd média:</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="">
+                    <button class="btn btn-outline-secondary" type="button">
+                      <i class="bi bi-info-circle"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <label class="mb-0">Número de apostas:</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="">
+                    <button class="btn btn-outline-secondary" type="button">
+                      <i class="bi bi-info-circle"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="row mb-3 align-items-center">
+            <div class="col">
+              <label class="mb-0">Valor por aposta:</label>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="">
+                <button class="btn btn-outline-secondary" type="button">
+                  <i class="bi bi-info-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+    
+          <div class="row mb-3 align-items-center">
+            <div class="col">
+              <label class="mb-0">Tipo de mercado:</label>
+              <div class="input-group">
+                <select class="form-select bg-secondary bg-opacity-25">
+                  <option selected>Selecione</option>
+                  <option>Mercado de gols</option>
+                  <option>Mercado de escanteios</option>
+                  <option>Mercado de resultado final</option>
+                  <option>Mercado asiático</option>
+                  <option>Mercado de jogadores</option>
+                </select>
+                <button class="btn btn-outline-secondary" type="button">
+                  <i class="bi bi-info-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+    
+          <div class="mt-4 mb-3">
+            <p class="mb-2">Habilidade do jogador:</p>
+            <div class="row align-items-center">
+              <div class="col">
+                <div class="position-relative">
+                  <div id="percentageValue" class="text-center mb-1">50%</div>
+                  <input type="range" class="form-range" min="5" max="95" value="50" oninput="document.getElementById('percentageValue').textContent = this.value + '%'">
+                  <button class="position-absolute end-0 top-0 btn btn-sm btn-link text-secondary p-0">
+                    <i class="bi bi-info-circle"></i>
+                  </button>
+                </div>
+                <div class="text-center text-muted small">
+                  <span>Jogador melhor que X% dos apostadores</span>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="text-center mt-4">
+            <a href="resultados.html"><button class="btn btn-secondary px-4 py-2">Simular</button></a>
+          </div>
+    
+        </div>
+      </div>
+    </div>
 
     <footer class="py-4 border-top mt-5">
         <div class="mx-auto d-flex flex-wrap align-items-center justify-content-between container-xxl">
